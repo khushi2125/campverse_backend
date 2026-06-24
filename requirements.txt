@@ -1,0 +1,5 @@
+# Django project dependencies listed in requirements.txt, specifying the required versions of Django, Django REST Framework, django-cors-headers, and Pillow. These dependencies are essential for the functionality of the project, including web framework capabilities, API development, handling cross-origin requests, and image processing. The specified version ranges ensure compatibility while allowing for updates within those ranges.
+django>=4.2,<6.0
+djangorestframework>=3.14
+django-cors-headers>=4.0
+pillow>=10.0
