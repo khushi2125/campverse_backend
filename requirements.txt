@@ -3,4 +3,5 @@ django>=4.2,<6.0
 djangorestframework>=3.14
 django-cors-headers>=4.0
 pillow>=10.0
+whitenoise>=6.0
 gunicorn>=23.0.0
