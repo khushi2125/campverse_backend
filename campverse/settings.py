@@ -2,8 +2,7 @@
 Django settings for campverse project.
 
 """
-# Django settings for the CampVerse project, including configurations for installed apps, middleware, database, authentication, and static/media files. It also includes CORS settings for local development and REST framework configurations for API authentication and permissions.
-import os
+# Django se
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -14,15 +13,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-quv8o&1v59m)3!mqd=k3o@y*be=%@%#pd*c0u17ny!jdh_@wih'
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = 'django-insecure-quv8o&1v59m)3!mqd=k3o@y*be=%@%#pd*c0u17ny!jdh_@wih'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['*']
 
-
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'campverse-backend-cn95.onrender.com',
+]
 # Application definition
 
 INSTALLED_APPS = [
