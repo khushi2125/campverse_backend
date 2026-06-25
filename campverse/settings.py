@@ -58,7 +58,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://campverse-one.vercel.app",
+]
 CORS_ALLOW_CREDENTIALS = True
 
 # Add CSRF trusted origins for local development
